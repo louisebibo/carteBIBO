@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_064a87a3f345cf8d5d1f4e95bf548239 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_064a87a3f345cf8d5d1f4e95bf548239" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_064a87a3f345cf8d5d1f4e95bf548239 = L.map(
+                "map_064a87a3f345cf8d5d1f4e95bf548239",
+                {
+                    center: [46.65157605882353, 0.9019631764705882],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_601e2d11acd72b7bc6fef2994a3ffc7b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+            var marker_fbec6feeeebed725aea810db510c4b79 = L.marker(
+                [47.215655, -1.554514],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_ef286e92856395f8e2c491397b576219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8620dadf60816176231b73c8352b6de4 = $(`<div id="html_8620dadf60816176231b73c8352b6de4" style="width: 100.0%; height: 100.0%;">La Brulerie </div>`)[0];
+            popup_ef286e92856395f8e2c491397b576219.setContent(html_8620dadf60816176231b73c8352b6de4);
+        
+
+        marker_fbec6feeeebed725aea810db510c4b79.bindPopup(popup_ef286e92856395f8e2c491397b576219)
+        ;
+
+        
+    
+    
+            marker_fbec6feeeebed725aea810db510c4b79.bindTooltip(
+                `<div>
+                     La Brulerie 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bf4c9a9a5107e33d0a54a0599862c7b = L.marker(
+                [44.865015, -0.51601],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_ea7f0f0d25afda8cf94f39f211a1b21c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6a9cf0c0c4b6718250af36262915f82 = $(`<div id="html_e6a9cf0c0c4b6718250af36262915f82" style="width: 100.0%; height: 100.0%;">Biocoop Cenon</div>`)[0];
+            popup_ea7f0f0d25afda8cf94f39f211a1b21c.setContent(html_e6a9cf0c0c4b6718250af36262915f82);
+        
+
+        marker_0bf4c9a9a5107e33d0a54a0599862c7b.bindPopup(popup_ea7f0f0d25afda8cf94f39f211a1b21c)
+        ;
+
+        
+    
+    
+            marker_0bf4c9a9a5107e33d0a54a0599862c7b.bindTooltip(
+                `<div>
+                     Biocoop Cenon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adbc23dbd9dfcff4469ecd3076b592bc = L.marker(
+                [48.016799, 6.589038],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_7da333a24537287a0bfae4007b082b1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4bce18c7badda3d917eaefc755dcf0e = $(`<div id="html_b4bce18c7badda3d917eaefc755dcf0e" style="width: 100.0%; height: 100.0%;">Le dos de la cuilière </div>`)[0];
+            popup_7da333a24537287a0bfae4007b082b1d.setContent(html_b4bce18c7badda3d917eaefc755dcf0e);
+        
+
+        marker_adbc23dbd9dfcff4469ecd3076b592bc.bindPopup(popup_7da333a24537287a0bfae4007b082b1d)
+        ;
+
+        
+    
+    
+            marker_adbc23dbd9dfcff4469ecd3076b592bc.bindTooltip(
+                `<div>
+                     Le dos de la cuilière 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2172ab9b4d5445b4b9012b3e7ba01413 = L.marker(
+                [44.910234, -0.238382],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_6c484cc2e425b5278cb2f7621d3d34ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75bc0d2fbe65cf328dab51c45db9ebf3 = $(`<div id="html_75bc0d2fbe65cf328dab51c45db9ebf3" style="width: 100.0%; height: 100.0%;">Biocoop Libourne</div>`)[0];
+            popup_6c484cc2e425b5278cb2f7621d3d34ba.setContent(html_75bc0d2fbe65cf328dab51c45db9ebf3);
+        
+
+        marker_2172ab9b4d5445b4b9012b3e7ba01413.bindPopup(popup_6c484cc2e425b5278cb2f7621d3d34ba)
+        ;
+
+        
+    
+    
+            marker_2172ab9b4d5445b4b9012b3e7ba01413.bindTooltip(
+                `<div>
+                     Biocoop Libourne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acab078f9dcf9533969b46da5de3f7c2 = L.marker(
+                [48.88836, 2.403464],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_ea062153b064671b21d39ed7c61fa1a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bdf5f7ae6dc4efcdf9f36b849d71bc6 = $(`<div id="html_7bdf5f7ae6dc4efcdf9f36b849d71bc6" style="width: 100.0%; height: 100.0%;">Julienne</div>`)[0];
+            popup_ea062153b064671b21d39ed7c61fa1a5.setContent(html_7bdf5f7ae6dc4efcdf9f36b849d71bc6);
+        
+
+        marker_acab078f9dcf9533969b46da5de3f7c2.bindPopup(popup_ea062153b064671b21d39ed7c61fa1a5)
+        ;
+
+        
+    
+    
+            marker_acab078f9dcf9533969b46da5de3f7c2.bindTooltip(
+                `<div>
+                     Julienne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78fa581471367758a63531fbcd9f2e1b = L.marker(
+                [44.838614, -0.579485],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_898677056828a518037556ea40f349c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64e686f775fea0a4c780b22c1f1c4713 = $(`<div id="html_64e686f775fea0a4c780b22c1f1c4713" style="width: 100.0%; height: 100.0%;">Maison Lejeune</div>`)[0];
+            popup_898677056828a518037556ea40f349c6.setContent(html_64e686f775fea0a4c780b22c1f1c4713);
+        
+
+        marker_78fa581471367758a63531fbcd9f2e1b.bindPopup(popup_898677056828a518037556ea40f349c6)
+        ;
+
+        
+    
+    
+            marker_78fa581471367758a63531fbcd9f2e1b.bindTooltip(
+                `<div>
+                     Maison Lejeune
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7dde993ff3cc475c2d46079d0b8876a = L.marker(
+                [48.456809, -5.095606],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_fb258ec96696aa6657bfd84bf61208dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afc813abf08e9d719de650a9d32262f8 = $(`<div id="html_afc813abf08e9d719de650a9d32262f8" style="width: 100.0%; height: 100.0%;">Hippocampe Ouessant</div>`)[0];
+            popup_fb258ec96696aa6657bfd84bf61208dd.setContent(html_afc813abf08e9d719de650a9d32262f8);
+        
+
+        marker_c7dde993ff3cc475c2d46079d0b8876a.bindPopup(popup_fb258ec96696aa6657bfd84bf61208dd)
+        ;
+
+        
+    
+    
+            marker_c7dde993ff3cc475c2d46079d0b8876a.bindTooltip(
+                `<div>
+                     Hippocampe Ouessant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f39cd3f8af3c21bfa9d6404ab4a1be5 = L.marker(
+                [43.898607, 1.897929],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_7ff4338cad248c8bfa354ce3ae3ef617 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d13d0261a11a0d79d789b983e7f9072c = $(`<div id="html_d13d0261a11a0d79d789b983e7f9072c" style="width: 100.0%; height: 100.0%;">Seme Epicerie</div>`)[0];
+            popup_7ff4338cad248c8bfa354ce3ae3ef617.setContent(html_d13d0261a11a0d79d789b983e7f9072c);
+        
+
+        marker_2f39cd3f8af3c21bfa9d6404ab4a1be5.bindPopup(popup_7ff4338cad248c8bfa354ce3ae3ef617)
+        ;
+
+        
+    
+    
+            marker_2f39cd3f8af3c21bfa9d6404ab4a1be5.bindTooltip(
+                `<div>
+                     Seme Epicerie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd5e7deca55321761d2e72a5ed6e7085 = L.marker(
+                [49.25327, 4.044973],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_637256622bc1d57b9f3ae6c0f0ede53c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfe0cb3093172a7e06d30c4113f3fd43 = $(`<div id="html_cfe0cb3093172a7e06d30c4113f3fd43" style="width: 100.0%; height: 100.0%;">Biomonde Natureva</div>`)[0];
+            popup_637256622bc1d57b9f3ae6c0f0ede53c.setContent(html_cfe0cb3093172a7e06d30c4113f3fd43);
+        
+
+        marker_fd5e7deca55321761d2e72a5ed6e7085.bindPopup(popup_637256622bc1d57b9f3ae6c0f0ede53c)
+        ;
+
+        
+    
+    
+            marker_fd5e7deca55321761d2e72a5ed6e7085.bindTooltip(
+                `<div>
+                     Biomonde Natureva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c48db6091a2c948c8cd9bbe2a1465b92 = L.marker(
+                [45.43897, 4.392003],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_991f832ab94ae3fb89b5bf85a29a6f7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e917dde9c12a9bac33c1e95447f517a9 = $(`<div id="html_e917dde9c12a9bac33c1e95447f517a9" style="width: 100.0%; height: 100.0%;">Vrac en Vert</div>`)[0];
+            popup_991f832ab94ae3fb89b5bf85a29a6f7a.setContent(html_e917dde9c12a9bac33c1e95447f517a9);
+        
+
+        marker_c48db6091a2c948c8cd9bbe2a1465b92.bindPopup(popup_991f832ab94ae3fb89b5bf85a29a6f7a)
+        ;
+
+        
+    
+    
+            marker_c48db6091a2c948c8cd9bbe2a1465b92.bindTooltip(
+                `<div>
+                     Vrac en Vert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdcf81ad740645b17390111c93dbb337 = L.marker(
+                [48.004276, 0.197594],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_4ee31dce3d9c0c475cdc24638fdd9c24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85b97c48fa3354bf5a8dd50f543f3952 = $(`<div id="html_85b97c48fa3354bf5a8dd50f543f3952" style="width: 100.0%; height: 100.0%;">Vrac & local</div>`)[0];
+            popup_4ee31dce3d9c0c475cdc24638fdd9c24.setContent(html_85b97c48fa3354bf5a8dd50f543f3952);
+        
+
+        marker_cdcf81ad740645b17390111c93dbb337.bindPopup(popup_4ee31dce3d9c0c475cdc24638fdd9c24)
+        ;
+
+        
+    
+    
+            marker_cdcf81ad740645b17390111c93dbb337.bindTooltip(
+                `<div>
+                     Vrac & local
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68046c3c3995a5366c476ef709afc2f8 = L.marker(
+                [43.878399, -1.303318],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_23464222af53915b1f8e6d55dfa5140e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a116c635c9dc345e6287862be90987ff = $(`<div id="html_a116c635c9dc345e6287862be90987ff" style="width: 100.0%; height: 100.0%;">Les Jeannettes </div>`)[0];
+            popup_23464222af53915b1f8e6d55dfa5140e.setContent(html_a116c635c9dc345e6287862be90987ff);
+        
+
+        marker_68046c3c3995a5366c476ef709afc2f8.bindPopup(popup_23464222af53915b1f8e6d55dfa5140e)
+        ;
+
+        
+    
+    
+            marker_68046c3c3995a5366c476ef709afc2f8.bindTooltip(
+                `<div>
+                     Les Jeannettes 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0081555acb8f7d1882a1652b53616184 = L.marker(
+                [48.823032, 2.413647],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_88a250afe66d28adb6996458e033f243 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78a51fca24ba62b2ea34d31a9e3b755e = $(`<div id="html_78a51fca24ba62b2ea34d31a9e3b755e" style="width: 100.0%; height: 100.0%;">Mémé Greeny</div>`)[0];
+            popup_88a250afe66d28adb6996458e033f243.setContent(html_78a51fca24ba62b2ea34d31a9e3b755e);
+        
+
+        marker_0081555acb8f7d1882a1652b53616184.bindPopup(popup_88a250afe66d28adb6996458e033f243)
+        ;
+
+        
+    
+    
+            marker_0081555acb8f7d1882a1652b53616184.bindTooltip(
+                `<div>
+                     Mémé Greeny
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff447f2247689c577bab2e8db6bc139e = L.marker(
+                [44.857439, -0.560298],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_374efe76454a65d050ac80ccc09411c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac11b733bdfd1ca787b8acfd556d9975 = $(`<div id="html_ac11b733bdfd1ca787b8acfd556d9975" style="width: 100.0%; height: 100.0%;">Echoppe de la lune</div>`)[0];
+            popup_374efe76454a65d050ac80ccc09411c9.setContent(html_ac11b733bdfd1ca787b8acfd556d9975);
+        
+
+        marker_ff447f2247689c577bab2e8db6bc139e.bindPopup(popup_374efe76454a65d050ac80ccc09411c9)
+        ;
+
+        
+    
+    
+            marker_ff447f2247689c577bab2e8db6bc139e.bindTooltip(
+                `<div>
+                     Echoppe de la lune
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c49cca2d99d4e3d452e0128a1d0e67 = L.marker(
+                [44.821521, -0.559481],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_f444281f25b9bc439609a93028a4f6f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b00ddd5266f3997ede0527f923e714a = $(`<div id="html_5b00ddd5266f3997ede0527f923e714a" style="width: 100.0%; height: 100.0%;">L'Eco Pin</div>`)[0];
+            popup_f444281f25b9bc439609a93028a4f6f7.setContent(html_5b00ddd5266f3997ede0527f923e714a);
+        
+
+        marker_c9c49cca2d99d4e3d452e0128a1d0e67.bindPopup(popup_f444281f25b9bc439609a93028a4f6f7)
+        ;
+
+        
+    
+    
+            marker_c9c49cca2d99d4e3d452e0128a1d0e67.bindTooltip(
+                `<div>
+                     L'Eco Pin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10fbec0954bde6fcc264c066602f3979 = L.marker(
+                [47.904641, 1.893232],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_e12524c95d14e12c54c228188628f05f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e98f0cc1768277fdf2d243c68cf2ca0 = $(`<div id="html_0e98f0cc1768277fdf2d243c68cf2ca0" style="width: 100.0%; height: 100.0%;">Cafés Jeanne d'Arc</div>`)[0];
+            popup_e12524c95d14e12c54c228188628f05f.setContent(html_0e98f0cc1768277fdf2d243c68cf2ca0);
+        
+
+        marker_10fbec0954bde6fcc264c066602f3979.bindPopup(popup_e12524c95d14e12c54c228188628f05f)
+        ;
+
+        
+    
+    
+            marker_10fbec0954bde6fcc264c066602f3979.bindTooltip(
+                `<div>
+                     Cafés Jeanne d'Arc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dfb113dbdbf8473380e0b1173267a44 = L.marker(
+                [49.005152, 1.908588],
+                {}
+            ).addTo(map_064a87a3f345cf8d5d1f4e95bf548239);
+        
+    
+        var popup_744eaf8f013ffa339959bbe18bf671c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fd1c03249770cc5709caa49fee172e2 = $(`<div id="html_4fd1c03249770cc5709caa49fee172e2" style="width: 100.0%; height: 100.0%;">Palais de Pierrot</div>`)[0];
+            popup_744eaf8f013ffa339959bbe18bf671c7.setContent(html_4fd1c03249770cc5709caa49fee172e2);
+        
+
+        marker_5dfb113dbdbf8473380e0b1173267a44.bindPopup(popup_744eaf8f013ffa339959bbe18bf671c7)
+        ;
+
+        
+    
+    
+            marker_5dfb113dbdbf8473380e0b1173267a44.bindTooltip(
+                `<div>
+                     Palais de Pierrot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
