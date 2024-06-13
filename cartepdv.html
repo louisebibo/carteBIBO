@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carte des Points de Vente</title>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([47.215655, -1.554514], 6);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var locations = [
+            ["La Brulerie", "24 rue de la Marne", 47.215655, -1.554514],
+            ["Biocoop Cenon", "213 Av. Carnot", 44.865015, -0.51601],
+            ["Le dos de la Cuillere", "8 Pl. de Lattre Tassigny", 48.016799, 6.589038],
+            ["Biocoop Libourne", "39 Av. de Verdun", 44.910234, -0.238382],
+            ["Julienne", "1 rue Franklin", 48.88836, 2.403464],
+            ["Maison Lejeune", "62 rue Bouffard", 44.838614, -0.579485],
+            ["Hippocampe Ouessant", "Bourg", 48.456809, -5.095606],
+            ["Seme Epicerie", "27 rue Jean Jaures", 43.898607, 1.897929],
+            ["Biomonde Natureva", "17 Bd Saint-Marceaux", 49.25327, 4.044973],
+            ["Vrac en Vert", "22 Rue de la Republique", 45.43897, 4.392003],
+            ["Vrac & local", "1 Pl. de la Republique", 48.004276, 0.197594],
+            ["Les Jeannettes", "103 Av. du Lac", 43.878399, -1.303318],
+            ["Meme Greeny", "18 Av. Jean Jaures", 48.823032, 2.413647],
+            ["Echoppe de la lune", "18 Quai de Bacalan", 44.857439, -0.560298],
+            ["L'Eco Pin", "46/48 Rue de la Compagnie du Midi", 44.821521, -0.559481],
+            ["Cafe Jeanne d'Arc", "13 Rue du Faubourg Saint-Jean", 47.904641, 1.893232],
+            ["Cafe Jeanne d'Arc", "7 Rue de la République", 47.9036076, 1.9040359],
+            ["Cafe Jeanne d'Arc", "16 Rue Royale", 47.8989459, 1.9042744],
+            ["Palais de Pierrot", "30 Rue du Marechal Foch", 49.005152, 1.908588]
+        ];
+
+        for (var i = 0; i < locations.length; i++) {
+            var location = locations[i];
+            L.marker([location[2], location[3]], {
+                icon: L.icon({
+                    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41],
+                    iconColor: '#804D3B',
+                    className: 'custom-icon'
+                })
+            })
+            .bindPopup("<b>" + location[0] + "</b><br>" + location[1])
+            .addTo(map);
+        }
+    </script>
+</body>
+</html>
