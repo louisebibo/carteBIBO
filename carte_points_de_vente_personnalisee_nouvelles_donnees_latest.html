@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93a8171ac9ec00bba47f7f3cf3099245 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_93a8171ac9ec00bba47f7f3cf3099245" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93a8171ac9ec00bba47f7f3cf3099245 = L.map(
+                "map_93a8171ac9ec00bba47f7f3cf3099245",
+                {
+                    center: [46.783123499999995, 1.0074570684210526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05191b4ca6a172d3a5725d0d38de2fde = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var marker_3771e34ac0fbb3d382f44a0983fb1479 = L.marker(
+                [47.215655, -1.554514],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_9d971dc576bef54045c9572363ea8ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_3771e34ac0fbb3d382f44a0983fb1479.setIcon(icon_9d971dc576bef54045c9572363ea8ada);
+        
+    
+        var popup_ace88d21e1102b6b91337714b29cfedf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c32c83d2362f1e43f648318357fc159 = $(`<div id="html_4c32c83d2362f1e43f648318357fc159" style="width: 100.0%; height: 100.0%;">La Brulerie <br>24 rue de la Marne<br>44000 Nantes</div>`)[0];
+            popup_ace88d21e1102b6b91337714b29cfedf.setContent(html_4c32c83d2362f1e43f648318357fc159);
+        
+
+        marker_3771e34ac0fbb3d382f44a0983fb1479.bindPopup(popup_ace88d21e1102b6b91337714b29cfedf)
+        ;
+
+        
+    
+    
+            marker_3771e34ac0fbb3d382f44a0983fb1479.bindTooltip(
+                `<div>
+                     La Brulerie <br>24 rue de la Marne<br>44000 Nantes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21c2568a4d12070df70b10aba412ff78 = L.marker(
+                [44.865015, -0.51601],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_f1b9ac80e27d89eda53d5d79d12a856d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_21c2568a4d12070df70b10aba412ff78.setIcon(icon_f1b9ac80e27d89eda53d5d79d12a856d);
+        
+    
+        var popup_fcd02aa1f81d76c4c08fb924abdc5c0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79e99e7cab8e6ad9a3c51d2644b68343 = $(`<div id="html_79e99e7cab8e6ad9a3c51d2644b68343" style="width: 100.0%; height: 100.0%;">Biocoop Cenon<br>213 Av. Carnot<br>33150 Cenon</div>`)[0];
+            popup_fcd02aa1f81d76c4c08fb924abdc5c0b.setContent(html_79e99e7cab8e6ad9a3c51d2644b68343);
+        
+
+        marker_21c2568a4d12070df70b10aba412ff78.bindPopup(popup_fcd02aa1f81d76c4c08fb924abdc5c0b)
+        ;
+
+        
+    
+    
+            marker_21c2568a4d12070df70b10aba412ff78.bindTooltip(
+                `<div>
+                     Biocoop Cenon<br>213 Av. Carnot<br>33150 Cenon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f7d72b931c31c41479b2890ce4ec92 = L.marker(
+                [48.016799, 6.589038],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_ff39e587c6e5ea76530b7480fc4a2f81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_c3f7d72b931c31c41479b2890ce4ec92.setIcon(icon_ff39e587c6e5ea76530b7480fc4a2f81);
+        
+    
+        var popup_c278182dbaeacb4deee383029eab5adf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b62a5abfd917be6f2d9ab4944dcb2a9d = $(`<div id="html_b62a5abfd917be6f2d9ab4944dcb2a9d" style="width: 100.0%; height: 100.0%;">Le dos de la cuiliÃ¨re <br>8 Pl. de Lattre Tassigny<br>88200 Remiremont</div>`)[0];
+            popup_c278182dbaeacb4deee383029eab5adf.setContent(html_b62a5abfd917be6f2d9ab4944dcb2a9d);
+        
+
+        marker_c3f7d72b931c31c41479b2890ce4ec92.bindPopup(popup_c278182dbaeacb4deee383029eab5adf)
+        ;
+
+        
+    
+    
+            marker_c3f7d72b931c31c41479b2890ce4ec92.bindTooltip(
+                `<div>
+                     Le dos de la cuiliÃ¨re <br>8 Pl. de Lattre Tassigny<br>88200 Remiremont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fe52dcc93151d7bac8a23c8dabb3cb9 = L.marker(
+                [44.910234, -0.238382],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_49a42e06bcfb323f8d614dc6498ad693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_2fe52dcc93151d7bac8a23c8dabb3cb9.setIcon(icon_49a42e06bcfb323f8d614dc6498ad693);
+        
+    
+        var popup_b4a4908bdfaa4a4654b07ab97fd28753 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d979fc396c4c004f55dac37398fca419 = $(`<div id="html_d979fc396c4c004f55dac37398fca419" style="width: 100.0%; height: 100.0%;">Biocoop Libourne<br>39 Av. de Verdun<br>33500 Libourne</div>`)[0];
+            popup_b4a4908bdfaa4a4654b07ab97fd28753.setContent(html_d979fc396c4c004f55dac37398fca419);
+        
+
+        marker_2fe52dcc93151d7bac8a23c8dabb3cb9.bindPopup(popup_b4a4908bdfaa4a4654b07ab97fd28753)
+        ;
+
+        
+    
+    
+            marker_2fe52dcc93151d7bac8a23c8dabb3cb9.bindTooltip(
+                `<div>
+                     Biocoop Libourne<br>39 Av. de Verdun<br>33500 Libourne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_beec05e230fb7bb195a3f181dc6e228f = L.marker(
+                [48.88836, 2.403464],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_943ac337c464f95012aeb9480a38daed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_beec05e230fb7bb195a3f181dc6e228f.setIcon(icon_943ac337c464f95012aeb9480a38daed);
+        
+    
+        var popup_0b3b425b5b18255dec215461acff18f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f499d1cd868aca1196784204ee2385a = $(`<div id="html_5f499d1cd868aca1196784204ee2385a" style="width: 100.0%; height: 100.0%;">Julienne<br>1 rue Franklin<br>93310 Le Pr-Saint-Gervais</div>`)[0];
+            popup_0b3b425b5b18255dec215461acff18f2.setContent(html_5f499d1cd868aca1196784204ee2385a);
+        
+
+        marker_beec05e230fb7bb195a3f181dc6e228f.bindPopup(popup_0b3b425b5b18255dec215461acff18f2)
+        ;
+
+        
+    
+    
+            marker_beec05e230fb7bb195a3f181dc6e228f.bindTooltip(
+                `<div>
+                     Julienne<br>1 rue Franklin<br>93310 Le Pr-Saint-Gervais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_512c3d9c4791be9c8c3c73ef0f4914d9 = L.marker(
+                [44.838614, -0.579485],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_8039bb8ac5bc3fa9288b94412ad86100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_512c3d9c4791be9c8c3c73ef0f4914d9.setIcon(icon_8039bb8ac5bc3fa9288b94412ad86100);
+        
+    
+        var popup_8622c98b4a6636846566590f20c25670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1c7566e915ec1ffad14a52ee5884347 = $(`<div id="html_d1c7566e915ec1ffad14a52ee5884347" style="width: 100.0%; height: 100.0%;">Maison Lejeune<br>62 rue Bouffard<br>33000 Bordeaux</div>`)[0];
+            popup_8622c98b4a6636846566590f20c25670.setContent(html_d1c7566e915ec1ffad14a52ee5884347);
+        
+
+        marker_512c3d9c4791be9c8c3c73ef0f4914d9.bindPopup(popup_8622c98b4a6636846566590f20c25670)
+        ;
+
+        
+    
+    
+            marker_512c3d9c4791be9c8c3c73ef0f4914d9.bindTooltip(
+                `<div>
+                     Maison Lejeune<br>62 rue Bouffard<br>33000 Bordeaux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2679d52d2b015df030dc745f2ffaf54f = L.marker(
+                [48.456809, -5.095606],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_98fe1f5620d6369ad19989e27742beae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_2679d52d2b015df030dc745f2ffaf54f.setIcon(icon_98fe1f5620d6369ad19989e27742beae);
+        
+    
+        var popup_04e0379d59a7b2fae1c7475648149c97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc14e0a69e9377c3c303595ed36b1ed6 = $(`<div id="html_bc14e0a69e9377c3c303595ed36b1ed6" style="width: 100.0%; height: 100.0%;">Hippocampe Ouessant<br>Bourg<br>29242 Ouessant</div>`)[0];
+            popup_04e0379d59a7b2fae1c7475648149c97.setContent(html_bc14e0a69e9377c3c303595ed36b1ed6);
+        
+
+        marker_2679d52d2b015df030dc745f2ffaf54f.bindPopup(popup_04e0379d59a7b2fae1c7475648149c97)
+        ;
+
+        
+    
+    
+            marker_2679d52d2b015df030dc745f2ffaf54f.bindTooltip(
+                `<div>
+                     Hippocampe Ouessant<br>Bourg<br>29242 Ouessant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54ef698063e3b422236812a1bc616f10 = L.marker(
+                [43.898607, 1.897929],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_57c1ab6f05af27510582f8421d200526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_54ef698063e3b422236812a1bc616f10.setIcon(icon_57c1ab6f05af27510582f8421d200526);
+        
+    
+        var popup_5205615412a58c385999a09cbce378f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63c1274ec6e1ffb091d67430ea108237 = $(`<div id="html_63c1274ec6e1ffb091d67430ea108237" style="width: 100.0%; height: 100.0%;">Seme Epicerie<br>27 rue Jean JaurÃ¨s<br>81600 Gaillac</div>`)[0];
+            popup_5205615412a58c385999a09cbce378f2.setContent(html_63c1274ec6e1ffb091d67430ea108237);
+        
+
+        marker_54ef698063e3b422236812a1bc616f10.bindPopup(popup_5205615412a58c385999a09cbce378f2)
+        ;
+
+        
+    
+    
+            marker_54ef698063e3b422236812a1bc616f10.bindTooltip(
+                `<div>
+                     Seme Epicerie<br>27 rue Jean JaurÃ¨s<br>81600 Gaillac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7e301391e13cb6db01858f7d3c8b5ab = L.marker(
+                [49.25327, 4.044973],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_86cfc102d27e54423dba2696df1228b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_b7e301391e13cb6db01858f7d3c8b5ab.setIcon(icon_86cfc102d27e54423dba2696df1228b3);
+        
+    
+        var popup_06d700cce412e0ef0a451ded62255df8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb814dc818439bccfc6f7fdc8820dbb8 = $(`<div id="html_fb814dc818439bccfc6f7fdc8820dbb8" style="width: 100.0%; height: 100.0%;">Biomonde Natureva<br>17 Bd Saint-Marceaux<br>51100 Reims</div>`)[0];
+            popup_06d700cce412e0ef0a451ded62255df8.setContent(html_fb814dc818439bccfc6f7fdc8820dbb8);
+        
+
+        marker_b7e301391e13cb6db01858f7d3c8b5ab.bindPopup(popup_06d700cce412e0ef0a451ded62255df8)
+        ;
+
+        
+    
+    
+            marker_b7e301391e13cb6db01858f7d3c8b5ab.bindTooltip(
+                `<div>
+                     Biomonde Natureva<br>17 Bd Saint-Marceaux<br>51100 Reims
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce609327636e9edcb6bdc0e36519d25f = L.marker(
+                [45.43897, 4.392003],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_1ad64347eb24d72235da9ed89ef21400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_ce609327636e9edcb6bdc0e36519d25f.setIcon(icon_1ad64347eb24d72235da9ed89ef21400);
+        
+    
+        var popup_e67ad88f215dbe966b7a9020047b2954 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b4493184f893ea81c4ae68b6c8cc2b8 = $(`<div id="html_7b4493184f893ea81c4ae68b6c8cc2b8" style="width: 100.0%; height: 100.0%;">Vrac en Vert<br>22 Rue de la RÃ©publique<br>42000 Saint-Etienne</div>`)[0];
+            popup_e67ad88f215dbe966b7a9020047b2954.setContent(html_7b4493184f893ea81c4ae68b6c8cc2b8);
+        
+
+        marker_ce609327636e9edcb6bdc0e36519d25f.bindPopup(popup_e67ad88f215dbe966b7a9020047b2954)
+        ;
+
+        
+    
+    
+            marker_ce609327636e9edcb6bdc0e36519d25f.bindTooltip(
+                `<div>
+                     Vrac en Vert<br>22 Rue de la RÃ©publique<br>42000 Saint-Etienne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_251ea01d2f4fee539ba454af6f815c54 = L.marker(
+                [48.004276, 0.197594],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_020d07f36e493b4c02949fba153edd9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_251ea01d2f4fee539ba454af6f815c54.setIcon(icon_020d07f36e493b4c02949fba153edd9b);
+        
+    
+        var popup_ad23a7e2e78d41b17b1f11baceda0093 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae23d9ae1a6bf7263ea018b29e1829d0 = $(`<div id="html_ae23d9ae1a6bf7263ea018b29e1829d0" style="width: 100.0%; height: 100.0%;">Vrac & local<br>1 Pl. de la RÃ©publique<br>1420 Seyssel</div>`)[0];
+            popup_ad23a7e2e78d41b17b1f11baceda0093.setContent(html_ae23d9ae1a6bf7263ea018b29e1829d0);
+        
+
+        marker_251ea01d2f4fee539ba454af6f815c54.bindPopup(popup_ad23a7e2e78d41b17b1f11baceda0093)
+        ;
+
+        
+    
+    
+            marker_251ea01d2f4fee539ba454af6f815c54.bindTooltip(
+                `<div>
+                     Vrac & local<br>1 Pl. de la RÃ©publique<br>1420 Seyssel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8dffe4f658be414ac155834c5ea4cee = L.marker(
+                [43.878399, -1.303318],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_f9e83678810e83d3e7f4a5c51a683f6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_f8dffe4f658be414ac155834c5ea4cee.setIcon(icon_f9e83678810e83d3e7f4a5c51a683f6e);
+        
+    
+        var popup_df6862d1b971166bb45c311922aa1f2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2202e0b8172071aae3cf49a32848facb = $(`<div id="html_2202e0b8172071aae3cf49a32848facb" style="width: 100.0%; height: 100.0%;">Les Jeannettes <br>103 Av. du Lac<br>40550 Lon</div>`)[0];
+            popup_df6862d1b971166bb45c311922aa1f2a.setContent(html_2202e0b8172071aae3cf49a32848facb);
+        
+
+        marker_f8dffe4f658be414ac155834c5ea4cee.bindPopup(popup_df6862d1b971166bb45c311922aa1f2a)
+        ;
+
+        
+    
+    
+            marker_f8dffe4f658be414ac155834c5ea4cee.bindTooltip(
+                `<div>
+                     Les Jeannettes <br>103 Av. du Lac<br>40550 Lon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af6051929754650f12b35bd2eff09d43 = L.marker(
+                [48.823032, 2.413647],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_93e1fc4327044c68fe8eb23b6b6e50fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_af6051929754650f12b35bd2eff09d43.setIcon(icon_93e1fc4327044c68fe8eb23b6b6e50fe);
+        
+    
+        var popup_1b5b988ddfebda4919965297481dfb2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4226c429f8f6b2557b26499e81b302a = $(`<div id="html_d4226c429f8f6b2557b26499e81b302a" style="width: 100.0%; height: 100.0%;">Mm Greeny<br>18 Av. Jean JaurÃ¨s<br>94220 Charenton-le-Pont</div>`)[0];
+            popup_1b5b988ddfebda4919965297481dfb2a.setContent(html_d4226c429f8f6b2557b26499e81b302a);
+        
+
+        marker_af6051929754650f12b35bd2eff09d43.bindPopup(popup_1b5b988ddfebda4919965297481dfb2a)
+        ;
+
+        
+    
+    
+            marker_af6051929754650f12b35bd2eff09d43.bindTooltip(
+                `<div>
+                     Mm Greeny<br>18 Av. Jean JaurÃ¨s<br>94220 Charenton-le-Pont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4939b2cf019be825b121ca39a3a1cf21 = L.marker(
+                [44.857439, -0.560298],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_6fde10ab03fcb993d5f83263bfd2e084 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_4939b2cf019be825b121ca39a3a1cf21.setIcon(icon_6fde10ab03fcb993d5f83263bfd2e084);
+        
+    
+        var popup_4238786304b1d551c60a483c200ec7d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02507897601714d385b23a45daa0cc9a = $(`<div id="html_02507897601714d385b23a45daa0cc9a" style="width: 100.0%; height: 100.0%;">Echoppe de la lune<br>18 Quai de Bacalan<br>33000 Bordeaux</div>`)[0];
+            popup_4238786304b1d551c60a483c200ec7d6.setContent(html_02507897601714d385b23a45daa0cc9a);
+        
+
+        marker_4939b2cf019be825b121ca39a3a1cf21.bindPopup(popup_4238786304b1d551c60a483c200ec7d6)
+        ;
+
+        
+    
+    
+            marker_4939b2cf019be825b121ca39a3a1cf21.bindTooltip(
+                `<div>
+                     Echoppe de la lune<br>18 Quai de Bacalan<br>33000 Bordeaux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c07a601b99f3bf9547f3ef7aa8a6aa1b = L.marker(
+                [44.821521, -0.559481],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_6f26f2df45f678269d914b79df60bb25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_c07a601b99f3bf9547f3ef7aa8a6aa1b.setIcon(icon_6f26f2df45f678269d914b79df60bb25);
+        
+    
+        var popup_95aa8d301daef75cedaed048e3412af3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8368f6ea43a94cd1b69c084584aaba0 = $(`<div id="html_a8368f6ea43a94cd1b69c084584aaba0" style="width: 100.0%; height: 100.0%;">L'Eco Pin<br>46/48 Rue de la Compagnie du Midi<br>33800 Bordeaux</div>`)[0];
+            popup_95aa8d301daef75cedaed048e3412af3.setContent(html_a8368f6ea43a94cd1b69c084584aaba0);
+        
+
+        marker_c07a601b99f3bf9547f3ef7aa8a6aa1b.bindPopup(popup_95aa8d301daef75cedaed048e3412af3)
+        ;
+
+        
+    
+    
+            marker_c07a601b99f3bf9547f3ef7aa8a6aa1b.bindTooltip(
+                `<div>
+                     L'Eco Pin<br>46/48 Rue de la Compagnie du Midi<br>33800 Bordeaux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3184bb5fc4cb6476a4e16f0fc04b0186 = L.marker(
+                [47.904641, 1.893232],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_b7fc3176395c4d60e7ed906ca686bdd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_3184bb5fc4cb6476a4e16f0fc04b0186.setIcon(icon_b7fc3176395c4d60e7ed906ca686bdd8);
+        
+    
+        var popup_5746f1f6e2323744aba5bc0a8a148de1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43d680e792ed2a54bd3750feeb7652bc = $(`<div id="html_43d680e792ed2a54bd3750feeb7652bc" style="width: 100.0%; height: 100.0%;">Caf Jeanne d'Arc<br>13 Rue du Faubourg Saint-Jean<br>45000 Orleans</div>`)[0];
+            popup_5746f1f6e2323744aba5bc0a8a148de1.setContent(html_43d680e792ed2a54bd3750feeb7652bc);
+        
+
+        marker_3184bb5fc4cb6476a4e16f0fc04b0186.bindPopup(popup_5746f1f6e2323744aba5bc0a8a148de1)
+        ;
+
+        
+    
+    
+            marker_3184bb5fc4cb6476a4e16f0fc04b0186.bindTooltip(
+                `<div>
+                     Caf Jeanne d'Arc<br>13 Rue du Faubourg Saint-Jean<br>45000 Orleans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41ab2b2ffd4a3b3d2ab9c2bba40e7c83 = L.marker(
+                [47.9036076, 1.9040359],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_799c5aac7c9f67485a77fe188a7a6173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_41ab2b2ffd4a3b3d2ab9c2bba40e7c83.setIcon(icon_799c5aac7c9f67485a77fe188a7a6173);
+        
+    
+        var popup_2c482299b603e2dceadb649206dd7cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6386a12fd48d9e7cfc119264690d8fb9 = $(`<div id="html_6386a12fd48d9e7cfc119264690d8fb9" style="width: 100.0%; height: 100.0%;">Caf Jeanne d'Arc<br>7 Rue de la Rpublique<br>45000 Orleans</div>`)[0];
+            popup_2c482299b603e2dceadb649206dd7cfc.setContent(html_6386a12fd48d9e7cfc119264690d8fb9);
+        
+
+        marker_41ab2b2ffd4a3b3d2ab9c2bba40e7c83.bindPopup(popup_2c482299b603e2dceadb649206dd7cfc)
+        ;
+
+        
+    
+    
+            marker_41ab2b2ffd4a3b3d2ab9c2bba40e7c83.bindTooltip(
+                `<div>
+                     Caf Jeanne d'Arc<br>7 Rue de la Rpublique<br>45000 Orleans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_880b3ad2a742cb6920cf3b013447b00d = L.marker(
+                [47.8989459, 1.9042744],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_cfe88596b3501396c752f6cc9dc22d5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_880b3ad2a742cb6920cf3b013447b00d.setIcon(icon_cfe88596b3501396c752f6cc9dc22d5d);
+        
+    
+        var popup_95d1c5129a60e258e2a59555a127ecd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_889a89622bc0b9877fe552d6387eccd3 = $(`<div id="html_889a89622bc0b9877fe552d6387eccd3" style="width: 100.0%; height: 100.0%;">Caf Jeanne d'Arc<br>16 Rue Royale<br>45000 Orleans</div>`)[0];
+            popup_95d1c5129a60e258e2a59555a127ecd7.setContent(html_889a89622bc0b9877fe552d6387eccd3);
+        
+
+        marker_880b3ad2a742cb6920cf3b013447b00d.bindPopup(popup_95d1c5129a60e258e2a59555a127ecd7)
+        ;
+
+        
+    
+    
+            marker_880b3ad2a742cb6920cf3b013447b00d.bindTooltip(
+                `<div>
+                     Caf Jeanne d'Arc<br>16 Rue Royale<br>45000 Orleans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b7c641da24e80a2d4b7c1541947f327 = L.marker(
+                [49.005152, 1.908588],
+                {}
+            ).addTo(map_93a8171ac9ec00bba47f7f3cf3099245);
+        
+    
+            var icon_3955c752e4fd4bfd16658d4db7c887bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "#804D3B", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_1b7c641da24e80a2d4b7c1541947f327.setIcon(icon_3955c752e4fd4bfd16658d4db7c887bf);
+        
+    
+        var popup_83b836e6a38aab912718382bbdb2eedb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79e124dd5a0abb05cc747912b0f540bc = $(`<div id="html_79e124dd5a0abb05cc747912b0f540bc" style="width: 100.0%; height: 100.0%;">Palais de Pierrot<br>30 Rue du MarÃ©chal Foch<br>78250 Meulan-en-Yvelines</div>`)[0];
+            popup_83b836e6a38aab912718382bbdb2eedb.setContent(html_79e124dd5a0abb05cc747912b0f540bc);
+        
+
+        marker_1b7c641da24e80a2d4b7c1541947f327.bindPopup(popup_83b836e6a38aab912718382bbdb2eedb)
+        ;
+
+        
+    
+    
+            marker_1b7c641da24e80a2d4b7c1541947f327.bindTooltip(
+                `<div>
+                     Palais de Pierrot<br>30 Rue du MarÃ©chal Foch<br>78250 Meulan-en-Yvelines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
